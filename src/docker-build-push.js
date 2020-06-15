@@ -14,7 +14,7 @@ let githubOwner;
 const processBuildArgsInput = buildArgsInput => {
   core.debug(buildArgsInput)
   if (buildArgsInput) {
-    buildArgs = buildArgsInput.split(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+    buildArgs = buildArgsInput.split(',,')
   }
 
   return buildArgs;
