@@ -12,9 +12,8 @@ let githubOwner;
 
 // Convert buildArgs from String to Array, as GH Actions currently does not support Arrays
 const processBuildArgsInput = buildArgsInput => {
-  core.debug(buildArgsInput)
   if (buildArgsInput) {
-    buildArgs = buildArgsInput.split(',,')
+    buildArgs = buildArgsInput.split(',');
   }
 
   return buildArgs;
